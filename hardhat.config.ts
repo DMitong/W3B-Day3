@@ -11,17 +11,16 @@ const config: HardhatUserConfig = {
   //     //@ts-ignore
   //     accounts: [process.env.PRIVATEKEY],
 //  networks: {
-    // sepolia: {
-      // url: process.env.SEPOLIARPC,
-      // //@ts-ignore
-      // accounts: [process.env.PRIVATEKEY],
-
-    // },
-    hardhat: {
-      forking: {
-        url: process.env.MAINNETRPC!,
-     }
+    sepolia: {
+      url: process.env.SEPOLIARPC,
+      //@ts-ignore
+      accounts: [process.env.PRIVATEKEY],
     }
+    // hardhat: {
+    //   forking: {
+    //     url: process.env.MAINNETRPC!,
+    //  }
+    // }
  },
 };
 
